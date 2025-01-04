@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Website</title>
+    <style>
+      p {
+        font-size: 20px;
+      }
+
+      .titulo {
+        font-size: 50px;
+        color: blue;
+        font-weight: bold;
+      }
+
+      .destaque {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .instagram{
+        color: orange;
+      }
+
+      .github{
+        color: red;
+      }
+
+      .linkedin{
+        color: blue;
+      }
+
+      .input-vermelho {
+        color: red;
+      }
+
+      img {
+        position: relative;
+        top: -650px;
+        left: 835px;
+        width: 220px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1 class="titulo">
+         SITE TESTE 
+    </h1>
+
+    <section>
+      <p><br/>
+        <span class="input-vermelho">
+          Qual é o seu nome?
+        <input type="text" class="input-vermelho" />
+      
+        </span><br /><br />
+          Quantos anos você tem? <input type="number" /><br />
+      
+      <form>    
+          <legend> Como você conheceu este site? </legend> <br />
+          <input required type="radio" value="youtube" id="youtube" name="recform"/>Youtube<br /><br />
+          <input required type="radio" value="google" id="google" name="recform"/>Google<br /><br />
+          <input required type="radio" value="outro" id="outro" name="recform"/>Outro, Escreva: <input type="text" id="other" value="other" name="recform"/><br /><br />      
+      </form> <br/>
+
+        <span class="destaque">Qual a sua profissão?</span>
+        <input type="text" /><br /><br />
+      </section>
+
+      <section>
+        <form>
+        <h2>Formulário rápido (fast form)</h2>
+          <fieldset>
+            <legend>Você é brasileiro?</legend>
+            <label><input value="sim" type="radio" id="sim" name="brasileiro" required>Sim</label>
+            <label><input value="nao" type="radio" id="nao" name="brasileiro" required>Não</label>
+          </fieldset>
+          <fieldset>
+            <legend>Você tem mais de 18 anos?</legend>
+            <label><input value="sim" type="radio" id="sim18" name="idade" required>Sim</label>
+            <label><input value="nao" type="radio" id="nao18" name="idade" required>Não</label>
+          </fieldset>
+          <fieldset>
+            <legend>Qual gênero você se identifica</legend>
+            <label><input value="masculino" type="radio" id="masculino" name="genero" required>Masculino</label>
+            <label><input value="feminino" type="radio" id="feminino" name="genero" required>Feminino</label>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <blockquote>
+        <i>"E isso aqui, é uma citação, um blockquote!"</i>
+      </blockquote>
+    </p>
+
+    <ul>
+        <li>
+            <a class="instagram" href="https://instagram.com/bruno.walzer" target="_blank">ME SIGA NO INSTAGRAM</a>
+        </li>
+        <li>
+            <a class="github" href="https://github.com/EstudioDev" target="_blank">CONECTE-SE COMIGO NO GITHUB</a>
+        </li>
+        <li>
+            <a class="linkedin" href="http://linkedin.com/in/brunowalzer" target="_blank">CONECTE-SE COMIGO NO LINKEDIN</a>
+        </li>
+    </ul>
+
+    <h2>
+        <a href="seleumamou.html">Quero saber mais sobre o site!</a>
+    </h2>
+
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnzavIIRm8Qz-XLHXhm1FIeMUqLxVy3OQncw&s"
+    />
+  </body>
+</html>
