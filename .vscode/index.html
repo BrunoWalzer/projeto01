@@ -4,48 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Website</title>
-    <style>
-      p {
-        font-size: 20px;
-      }
-
-      .titulo {
-        font-size: 50px;
-        color: blue;
-        font-weight: bold;
-      }
-
-      .destaque {
-        font-size: 25px;
-        font-weight: bold;
-      }
-
-      .instagram{
-        color: orange;
-      }
-
-      .github{
-        color: red;
-      }
-
-      .linkedin{
-        color: blue;
-      }
-
-      .input-vermelho {
-        color: red;
-      }
-
-      img {
-        position: relative;
-        top: -650px;
-        left: 835px;
-        width: 220px;
-      }
-    </style>
-  </head>
+    <!-- Adicionando o link da fonte Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head> 
   <body>
-
     <h1 class="titulo">
          SITE TESTE 
     </h1>
@@ -55,16 +18,18 @@
         <span class="input-vermelho">
           Qual é o seu nome?
         <input type="text" class="input-vermelho" />
-      
-        </span><br /><br />
-          Quantos anos você tem? <input type="number" /><br />
-      
+        </span><br />
+        
+        <h2>
+          Para qual time você torce? <input type="number"/><br />
+        </h2>
+
       <form>    
           <legend> Como você conheceu este site? </legend> <br />
           <input required type="radio" value="youtube" id="youtube" name="recform"/>Youtube<br /><br />
           <input required type="radio" value="google" id="google" name="recform"/>Google<br /><br />
-          <input required type="radio" value="outro" id="outro" name="recform"/>Outro, Escreva: <input type="text" id="other" value="other" name="recform"/><br /><br />      
-      </form> <br/>
+          <input required type="radio" value="outro" id="outro" name="recform"/>Outro? Escreva: <input type="text" id="other"  name="recform"/><br /><br />      
+      </form> 
 
         <span class="destaque">Qual a sua profissão?</span>
         <input type="text" /><br /><br />
