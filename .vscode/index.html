@@ -10,7 +10,7 @@
   </head> 
   <body>
     <h1 class="titulo">
-         SITE TESTE 
+         Formulário de reconhecimento 
     </h1>
 
     <section>
@@ -20,46 +20,51 @@
         <input type="text" class="input-vermelho" />
         </span><br />
         
-        <h2>
-          Para qual time você torce? <input type="number"/><br />
-        </h2>
+      <p>
+        Para qual time você torce? <input type="text"/><br />
+      </p>
 
-      <form>    
-          <legend> Como você conheceu este site? </legend> <br />
-          <input required type="radio" value="youtube" id="youtube" name="recform"/>Youtube<br /><br />
-          <input required type="radio" value="google" id="google" name="recform"/>Google<br /><br />
-          <input required type="radio" value="outro" id="outro" name="recform"/>Outro? Escreva: <input type="text" id="other"  name="recform"/><br /><br />      
-      </form> 
-
+      <p>
         <span class="destaque">Qual a sua profissão?</span>
-        <input type="text" /><br /><br />
+        <input type="text" /><br />
+      </p>
+
+      <form>
+        <p>    
+          <legend> Como você conheceu este site? </legend>
+          <input required type="radio" value="youtube" id="youtube" name="recform"/>Youtube<br />
+          <input required type="radio" value="google" id="google" name="recform"/>Google<br />
+          <input required type="radio" value="outro" id="outro" name="recform"/>Outro? Escreva: <input type="text" id="other"  name="recform"/><br /> <br />
+        </p>    
+      </form> 
+      
       </section>
 
       <section>
         <form>
-        <h2>Formulário rápido (fast form)</h2>
+        <span class="destaque">Formulário rápido (fast form)</span>
           <fieldset>
-            <legend>Você é brasileiro?</legend>
-            <label><input value="sim" type="radio" id="sim" name="brasileiro" required>Sim</label>
-            <label><input value="nao" type="radio" id="nao" name="brasileiro" required>Não</label>
+            <h2><legend>Você é brasileiro?</legend></h2>
+            <h2><label><input value="sim" type="radio" id="sim" name="brasileiro" required>Sim</label></h2>
+            <h2><label><input value="nao" type="radio" id="nao" name="brasileiro" required>Não</label></h2>
           </fieldset>
           <fieldset>
-            <legend>Você tem mais de 18 anos?</legend>
-            <label><input value="sim" type="radio" id="sim18" name="idade" required>Sim</label>
-            <label><input value="nao" type="radio" id="nao18" name="idade" required>Não</label>
+            <h2><legend>Você tem mais de 18 anos?</legend></h2>
+            <h2><label><input value="sim" type="radio" id="sim18" name="idade" required>Sim</label></h2>
+            <h2><label><input value="nao" type="radio" id="nao18" name="idade" required>Não</label></h2>
           </fieldset>
           <fieldset>
-            <legend>Qual gênero você se identifica</legend>
-            <label><input value="masculino" type="radio" id="masculino" name="genero" required>Masculino</label>
-            <label><input value="feminino" type="radio" id="feminino" name="genero" required>Feminino</label>
+            <h2><legend>Qual gênero você se identifica</legend></h2>
+            <h2><label><input value="masculino" type="radio" id="masculino" name="genero" required>Masculino</label></h2>
+            <h2><label><input value="feminino" type="radio" id="feminino" name="genero" required>Feminino</label></h2>
           </fieldset>
           <button type="submit">Submit</button>
         </form>
       </section>
 
-      <blockquote>
-        <i>"E isso aqui, é uma citação, um blockquote!"</i>
-      </blockquote>
+      <p>
+        *Verifique se seus dados estão corretos*
+      </p>
     </p>
 
     <ul>
