@@ -22,12 +22,46 @@ h2 {
   font-size: 50px;
   color: blue;
   font-weight: bold;
+  display: flex;
+  flex-direction: column; /* Alinha elementos verticalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
 }
 
 .destaque {
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
   font-weight: bold;
+}
+
+.message {
+  font-family: "Montserrat", sans-serif;
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: black;
+}
+
+.button {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 20px;
+}
+
+.destaquepadding {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .instagram {
@@ -49,9 +83,15 @@ h2 {
   color: red;
 }
 
+hr {
+  background-color: black;
+  border-color: black;
+  height: 1px;
+}
+
 img {
   position: relative;
-  top: -900px;
+  top: -930px;
   left: 835px;
   width: 220px;
 }

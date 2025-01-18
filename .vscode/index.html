@@ -3,46 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>First Website</title>
+    <title>Formulário</title>
     <!-- Adicionando o link da fonte Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
   </head> 
   <body>
     <h1 class="titulo">
-         Formulário de reconhecimento 
+         Formulário de apresentação 
     </h1>
-
+    <hr>
     <section>
-      <p><br/>
-        <span class="input-vermelho">
-          Qual é o seu nome?
-        <input type="text" class="input-vermelho" />
-        </span><br />
+      <p>
+        Qual é o seu nome?
+      <input type="text"/>
+      </p>
         
       <p>
-        Para qual time você torce? <input type="text"/><br />
+        Para qual time você torce? <input type="text"/>
       </p>
 
       <p>
-        <span class="destaque">Qual a sua profissão?</span>
-        <input type="text" /><br />
+        Qual a sua profissão?<input type="text" />
       </p>
 
       <form>
         <p>    
-          <legend> Como você conheceu este site? </legend>
+          <legend> Como você <span class="destaque">conheceu</span> este site? </legend>
           <input required type="radio" value="youtube" id="youtube" name="recform"/>Youtube<br />
           <input required type="radio" value="google" id="google" name="recform"/>Google<br />
-          <input required type="radio" value="outro" id="outro" name="recform"/>Outro? Escreva: <input type="text" id="other"  name="recform"/><br /> <br />
+          <input required type="radio" value="outro" id="outro" name="recform"/>Outro? Escreva: <input type="text" id="other"  name="recform"/>
         </p>    
       </form> 
-      
       </section>
-
+      <hr>
       <section>
-        <form>
-        <span class="destaque">Formulário rápido (fast form)</span>
+        <form id="mainForm">
+        <span class="destaquepadding">Formulário rápido (fast form)</span>
           <fieldset>
             <h2><legend>Você é brasileiro?</legend></h2>
             <h2><label><input value="sim" type="radio" id="sim" name="brasileiro" required>Sim</label></h2>
@@ -54,11 +52,17 @@
             <h2><label><input value="nao" type="radio" id="nao18" name="idade" required>Não</label></h2>
           </fieldset>
           <fieldset>
-            <h2><legend>Qual gênero você se identifica</legend></h2>
+            <h2><legend>Qual é o seu gênero?</legend></h2>
             <h2><label><input value="masculino" type="radio" id="masculino" name="genero" required>Masculino</label></h2>
             <h2><label><input value="feminino" type="radio" id="feminino" name="genero" required>Feminino</label></h2>
           </fieldset>
-          <button type="submit">Submit</button>
+        </br>
+        <div>
+          <button class="button" type="submit">Enviar</button>
+        </div>
+        <div id="confirmationMessage" class="message">
+          Confira se seus dados estão corretos antes de enviar e aperte novamente no botão.
+        </div>
         </form>
       </section>
 
@@ -80,11 +84,12 @@
     </ul>
 
     <h2>
-        <a href="seleumamou.html">Quero saber mais sobre o site!</a>
+        <a href="social.html">Quero saber mais sobre o site!</a>
     </h2>
 
     <img
       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnzavIIRm8Qz-XLHXhm1FIeMUqLxVy3OQncw&s"
     />
+    <script src="js/script.js"></script>
   </body>
 </html>
