@@ -8,25 +8,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
-  </head> 
+  </head>
   <body>
     <h1 class="titulo">
          Formulário de apresentação 
     </h1>
     <hr>
     <section>
-      <p>
-        Qual é o seu nome?
-      <input type="text"/>
-      </p>
-        
-      <p>
-        Para qual time você torce? <input type="text"/>
-      </p>
-
-      <p>
-        Qual a sua profissão?<input type="text" />
-      </p>
+      <form>
+        <fieldset class="nolines" name="personalinfo">
+          <label for="nome">Nome:<input type="text" name="nome" id="nome" /></label>
+        </fieldset>
+        <fieldset class="nolines" name="personalinfo">
+          <label for="profissao">Profissão<input type="text" name="profissao" id="profissao" /></label>
+        </fieldset>
+        <fieldset class="nolines" name="personalinfo">
+          <label for="time">Seu time do coração:<input type="text" name="time" id="time" /></label>
+        </fieldset>
+      </form>
 
       <form>
         <p>    
@@ -40,21 +39,21 @@
       <hr>
       <section>
         <form id="mainForm">
-        <span class="destaquepadding">Formulário rápido (fast form)</span>
-          <fieldset>
-            <h2><legend>Você é brasileiro?</legend></h2>
-            <h2><label><input value="sim" type="radio" id="sim" name="brasileiro" required>Sim</label></h2>
-            <h2><label><input value="nao" type="radio" id="nao" name="brasileiro" required>Não</label></h2>
+        <span class="destaquepadding">Formulário rápido (fast form)</span>       
+        <fieldset class="nolines">
+            <h2 class="formulario"><legend>Você é brasileiro?</legend></h2>
+            <h2 class="formulario"><label><input value="sim" type="radio" id="sim" name="brasileiro" required>Sim</label></h2>
+            <h2 class="formulario"><label><input value="nao" type="radio" id="nao" name="brasileiro" required>Não</label></h2>
           </fieldset>
-          <fieldset>
-            <h2><legend>Você tem mais de 18 anos?</legend></h2>
-            <h2><label><input value="sim" type="radio" id="sim18" name="idade" required>Sim</label></h2>
-            <h2><label><input value="nao" type="radio" id="nao18" name="idade" required>Não</label></h2>
+          <fieldset class="nolines">
+            <h2 class="formulario"><legend>Você tem mais de 18 anos?</legend></h2>
+            <h2 class="formulario"><label><input value="sim" type="radio" id="sim18" name="idade" required>Sim</label></h2>
+            <h2 class="formulario"><label><input value="nao" type="radio" id="nao18" name="idade" required>Não</label></h2>
           </fieldset>
-          <fieldset>
-            <h2><legend>Qual é o seu gênero?</legend></h2>
-            <h2><label><input value="masculino" type="radio" id="masculino" name="genero" required>Masculino</label></h2>
-            <h2><label><input value="feminino" type="radio" id="feminino" name="genero" required>Feminino</label></h2>
+          <fieldset class="nolines">
+            <h2 class="formulario"><legend>Qual é o seu gênero?</legend></h2>
+            <h2 class="formulario"><label><input value="masculino" type="radio" id="masculino" name="genero" required>Masculino</label></h2>
+            <h2 class="formulario"><label><input value="feminino" type="radio" id="feminino" name="genero" required>Feminino</label></h2>
           </fieldset>
         </br>
         <div>
@@ -65,31 +64,7 @@
         </div>
         </form>
       </section>
-
-      <p>
-        *Verifique se seus dados estão corretos*
-      </p>
     </p>
-
-    <ul>
-        <li>
-            <a class="instagram" href="https://instagram.com/bruno.walzer" target="_blank">ME SIGA NO INSTAGRAM</a>
-        </li>
-        <li>
-            <a class="github" href="https://github.com/EstudioDev" target="_blank">CONECTE-SE COMIGO NO GITHUB</a>
-        </li>
-        <li>
-            <a class="linkedin" href="http://linkedin.com/in/brunowalzer" target="_blank">CONECTE-SE COMIGO NO LINKEDIN</a>
-        </li>
-    </ul>
-
-    <h2>
-        <a href="social.html">Quero saber mais sobre o site!</a>
-    </h2>
-
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnzavIIRm8Qz-XLHXhm1FIeMUqLxVy3OQncw&s"
-    />
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
-body.pagina1 {
+body {
   font-family: "Montserrat", sans-serif;
-  background-color: white;
+  background-color: rgb(230, 230, 230);
+  background-position: center;
 }
 
 p {
@@ -18,6 +19,34 @@ h2 {
   font-weight: 400;
 }
 
+fieldset[name="personalinfo"] {
+  padding: 5px 0;
+  font-size: 20px;
+}
+
+input[type="text"] {
+  background-color: rgb(230, 230, 230);
+  outline: none;
+  width: 100%;
+}
+
+input[name="recform"] {
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Alinha os itens em uma coluna */
+  max-width: 800px; /* Define uma largura máxima para o formulário */
+  margin: 0 auto; /* Centraliza o formulário na página */
+}
+
+form[id="mainForm"] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px; /* Espaçamento entre o label e o input */
+}
+
 .titulo {
   font-size: 50px;
   color: blue;
@@ -30,8 +59,15 @@ h2 {
 
 .destaque {
   font-family: "Montserrat", sans-serif;
-  font-size: 25px;
   font-weight: bold;
+}
+
+.formulario {
+  font-size: 20px;
+}
+
+.nolines {
+  border: 0;
 }
 
 .message {
@@ -50,9 +86,15 @@ h2 {
   font-family: "Montserrat", sans-serif;
   background-color: black;
   color: white;
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  margin: 20px auto;
   padding: 5px 20px;
+  box-shadow: 0px 0px 15px red;
+  border-radius: 5px;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 40px red;
 }
 
 .destaquepadding {
@@ -87,13 +129,7 @@ hr {
   background-color: black;
   border-color: black;
   height: 1px;
-}
-
-img {
-  position: relative;
-  top: -930px;
-  left: 835px;
-  width: 220px;
+  max-width: 800px;
 }
 
 /* Página 2 */

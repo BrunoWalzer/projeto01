@@ -1,22 +1,18 @@
-// Selecione o formulário e a mensagem de confirmação
-const form = document.getElementById("mainForm")
-const confirmationMessage = document.getElementById("confirmationMessage")
-const submitButton = form.querySelector(".button")
+let isConfirmed = false // Variável para rastrear a confirmação
 
-// Adicione um evento de 'submit' ao formulário
-form.addEventListener("submit", (event) => {
-  // Previne o envio imediato do formulário
-  event.preventDefault()
+document
+  .getElementById("mainForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault() // Impede o comportamento padrão do formulário
 
-  // Exibe a mensagem de confirmação se não estiver visível
-  if (
-    !confirmationMessage.style.display ||
-    confirmationMessage.style.display === "none"
-  ) {
-    confirmationMessage.style.display = "block"
-    submitButton.textContent = "Confirmar envio" // Altera o texto do botão
-  } else {
-    // Envia o formulário se a mensagem já estiver visível
-    form.submit()
-  }
-})
+    const confirmationMessage = document.getElementById("confirmationMessage")
+
+    if (!isConfirmed) {
+      // Primeiro clique: exibe a mensagem de confirmação
+      confirmationMessage.style.display = "block"
+      isConfirmed = true // Define como confirmado para o próximo clique
+    } else {
+      // Segundo clique: redireciona para outra página
+      window.location.href = "social.html" // Substitua pelo caminho da sua página
+    }
+  })
