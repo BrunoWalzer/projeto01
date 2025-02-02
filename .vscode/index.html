@@ -5,66 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário</title>
     <!-- Adicionando o link da fonte Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
   </head>
   <body>
-    <h1 class="titulo">
-         Formulário de apresentação 
-    </h1>
-    <hr>
+    <h1 class="titulo">Formulário de apresentação</h1>
+
     <section>
       <form>
         <fieldset class="nolines" name="personalinfo">
-          <label for="nome">Nome:<input type="text" name="nome" id="nome" /></label>
+          <label for="nome"
+            >Nome:<input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="*Digite seu nome aqui*"
+              required
+          /></label>
         </fieldset>
         <fieldset class="nolines" name="personalinfo">
-          <label for="profissao">Profissão<input type="text" name="profissao" id="profissao" /></label>
+          <label for="profissao"
+            >Profissão:<input
+              type="text"
+              name="profissao"
+              id="profissao"
+              placeholder="*Digite sua profissão aqui*"
+              required
+          /></label>
         </fieldset>
         <fieldset class="nolines" name="personalinfo">
-          <label for="time">Seu time do coração:<input type="text" name="time" id="time" /></label>
+          <label for="time"
+            >Qual é a sua idade:<input
+              type="text"
+              name="idade"
+              id="idade"
+              placeholder="*Digite qual é a sua idade aqui*"
+              required
+          /></label>
         </fieldset>
-      </form>
 
-      <form>
-        <p>    
-          <legend> Como você <span class="destaque">conheceu</span> este site? </legend>
-          <input required type="radio" value="youtube" id="youtube" name="recform"/>Youtube<br />
-          <input required type="radio" value="google" id="google" name="recform"/>Google<br />
-          <input required type="radio" value="outro" id="outro" name="recform"/>Outro? Escreva: <input type="text" id="other"  name="recform"/>
-        </p>    
-      </form> 
-      </section>
-      <hr>
-      <section>
-        <form id="mainForm">
-        <span class="destaquepadding">Formulário rápido (fast form)</span>       
-        <fieldset class="nolines">
-            <h2 class="formulario"><legend>Você é brasileiro?</legend></h2>
-            <h2 class="formulario"><label><input value="sim" type="radio" id="sim" name="brasileiro" required>Sim</label></h2>
-            <h2 class="formulario"><label><input value="nao" type="radio" id="nao" name="brasileiro" required>Não</label></h2>
-          </fieldset>
-          <fieldset class="nolines">
-            <h2 class="formulario"><legend>Você tem mais de 18 anos?</legend></h2>
-            <h2 class="formulario"><label><input value="sim" type="radio" id="sim18" name="idade" required>Sim</label></h2>
-            <h2 class="formulario"><label><input value="nao" type="radio" id="nao18" name="idade" required>Não</label></h2>
-          </fieldset>
-          <fieldset class="nolines">
-            <h2 class="formulario"><legend>Qual é o seu gênero?</legend></h2>
-            <h2 class="formulario"><label><input value="masculino" type="radio" id="masculino" name="genero" required>Masculino</label></h2>
-            <h2 class="formulario"><label><input value="feminino" type="radio" id="feminino" name="genero" required>Feminino</label></h2>
-          </fieldset>
-        </br>
+        <fieldset class="select-field">
+          <label for="pesquisa"
+            >Como você conheceu este formulário?
+            <select class="selectoptions" id="pesquisa" name="pesquisa">
+              <option>-------</option>
+              <option>Youtube</option>
+              <option>Instagram</option>
+              <option>Facebook</option>
+              <option>Twitter</option>
+              <option>LinkedIn</option>
+              <option>GitHub</option>
+              <option>Outro</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="checkbox-group">
+          <legend>
+            Quais as suas melhores competências? (Escolha uma ou mais)
+          </legend>
+          <label> <input type="checkbox" name="html" value="1" /> HTML </label>
+          <label> <input type="checkbox" name="css" value="2" /> CSS </label>
+          <label>
+            <input type="checkbox" name="js" value="3" /> JavaScript
+          </label>
+          <label>
+            <input type="checkbox" name="python" value="1" /> Python
+          </label>
+          <label> <input type="checkbox" name="java" value="2" /> Java </label>
+          <label> <input type="checkbox" name="c#" value="3" /> C# </label>
+        </fieldset>
+
+        <fieldset class="bio">
+          <label>
+            Escreva um breve texto em forma de apresentação abaixo:<textarea
+              id="bio"
+              rows="3"
+              cols="30"
+              placeholder="*Escreva sua apresentação aqui*"
+              required
+            ></textarea>
+          </label>
+        </fieldset>
+
         <div>
           <button class="button" type="submit">Enviar</button>
         </div>
         <div id="confirmationMessage" class="message">
-          Confira se seus dados estão corretos antes de enviar e aperte novamente no botão.
+          Confirme se as informações estão corretas e aperte novamente o botão
+          para enviar o formulário.
         </div>
-        </form>
-      </section>
-    </p>
+      </form>
+    </section>
+
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,18 +1,19 @@
-let isConfirmed = false // Variável para rastrear a confirmação
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form")
+  const confirmationMessage = document.getElementById("confirmationMessage")
+  const submitButton = document.querySelector(".button")
+  let confirmed = false // Variável para verificar se o usuário confirmou
 
-document
-  .getElementById("mainForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault() // Impede o comportamento padrão do formulário
+  form.addEventListener("submit", function (event) {
+    event.preventDefault() // Impede o envio do formulário imediatamente
 
-    const confirmationMessage = document.getElementById("confirmationMessage")
-
-    if (!isConfirmed) {
-      // Primeiro clique: exibe a mensagem de confirmação
+    if (!confirmed) {
+      // Exibe a mensagem de confirmação no primeiro clique
       confirmationMessage.style.display = "block"
-      isConfirmed = true // Define como confirmado para o próximo clique
+      confirmed = true
     } else {
-      // Segundo clique: redireciona para outra página
-      window.location.href = "social.html" // Substitua pelo caminho da sua página
+      // No segundo clique, envia o formulário e redireciona
+      window.location.href = "social.html"
     }
   })
+})
