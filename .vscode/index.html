@@ -39,13 +39,25 @@
         </fieldset>
         <fieldset class="nolines" name="personalinfo">
           <label for="time"
-            >Qual é a sua idade:<input
-              type="text"
+            >Idade:<input
+              type="number"
+              min="13"
+              max="120"
               name="idade"
               id="idade"
               placeholder="*Digite qual é a sua idade aqui*"
               required
           /></label>
+        </fieldset>
+
+        <fieldset class="radio-group">
+          <label>Você é brasileiro?</label>
+          <label>
+            <input type="radio" id="sim" name="simnao" value="1" required /> Sim
+          </label>
+          <label>
+            <input type="radio" id="nao" name="simnao" value="2" required /> Não
+          </label>
         </fieldset>
 
         <fieldset class="select-field">

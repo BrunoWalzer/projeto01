@@ -35,6 +35,17 @@ input[type="text"] {
   border-radius: 5px;
 }
 
+input[type="number"] {
+  background-color: rgb(230, 230, 230);
+  border: rgb(230, 230, 230);
+  height: 25px;
+  outline: none;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
 form {
   background-color: rgb(210, 210, 210);
   display: flex;
@@ -43,6 +54,23 @@ form {
   margin: auto auto 100px auto;
   padding: 40px 35px 50px 30px;
   border-radius: 10px;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
+
+.radio-group label {
+  display: block; /* Faz cada label ocupar uma linha inteira */
+  margin-bottom: 8px; /* Espaço entre os botões */
+  font-size: 20px;
+}
+
+fieldset.radio-group {
+  border: 0;
+  padding: 0;
+  margin-top: 10px;
 }
 
 fieldset.select-field {
@@ -105,8 +133,8 @@ textarea {
 }
 
 ::placeholder {
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  color: rgb(80, 80, 80);
 }
 
 .titulo {
